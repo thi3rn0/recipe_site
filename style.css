@@ -1,12 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 html{
     font-size: 18px;
     color: black;
-    /* background-color: #f8e9f2; */
+    font-family: 'Metal', cursive;
 }
 /*NAVBAR*/
 nav{
     justify-content: center;
-    /* border: solid 1px red; */
     
 }
 nav ul{
@@ -43,6 +45,8 @@ nav a:active {
 	position:relative;
 	top:1px;
 }
+/*FIN NAVBAR*/
+
 /*BANNIERE*/
 .image{
     text-align: center;
@@ -61,24 +65,26 @@ h1{
 
 
 .index{
-    background-image: linear-gradient(to top, rgba(176,174,174,.8), rgba(0,0,0,1)), url('img/spices.jpg');
+    background-image: linear-gradient(to top, rgba(176,174,174,.4), rgba(0,0,0,1)), url('img/spices.jpg');
 }
 
 .desserts{
-    background-image: linear-gradient(to top, rgba(176,174,174,.8), rgba(0,0,0,1)), url('img/tarte.jpg');
+    background-image: linear-gradient(to top, rgba(176,174,174,.4), rgba(0,0,0,1)), url('img/tarte.jpg');
 }
 
 .plats{
-    background-image: linear-gradient(to top, rgba(176,174,174,.8), rgba(0,0,0,1)), url('img/plats.jpg');
+    background-image: linear-gradient(to top, rgba(176,174,174,.4), rgba(0,0,0,1)), url('img/plats.jpg');
 }
 
 .entrees{
-    background-image: linear-gradient(to top, rgba(176,174,174,.8), rgba(0,0,0,1)), url('img/entree.jpg'); 
+    background-image: linear-gradient(to top, rgba(176,174,174,.4), rgba(0,0,0,1)), url('img/entree.jpg'); 
 }
 
 .keywords{
-    background-image: linear-gradient(to top, rgba(176,174,174,.8), rgba(0,0,0,1)), url('img/keywords.jpg');  
+    background-image: linear-gradient(to top, rgba(176,174,174,.4), rgba(0,0,0,1)), url('img/keywords.jpg');  
 }
+/*FIN BANNIERE*/
+
 /*MAIN*/
 h2{
     font-weight: 500;
@@ -92,6 +98,7 @@ h2, h3{
     text-decoration: none;
     color: black;
 }
+/*FIN MAIN*/
 
 /*CARTES*/
 .liste-plats{
@@ -123,17 +130,65 @@ h2, h3{
 
 .recipe-description p{
     color: #919191;
-    font-family: 'Indie Flower', cursive; 
+    font-family: 'Metal', cursive; 
     font-style: italic;
     font-weight: 200;
 }
 
-.recipe-description span{
+.prep{
     margin: 0 1%;
     color:#BEBEBE;
     font-weight: 100;
     font-size: 0.75rem;
 }
+/*FIN CARTES*/
+
+/*PAGE RECETTE*/
+.single-recipe-batbouts{
+    background: url('img/batbouts.jpg') no-repeat;
+    height: 400px;
+}
+.description h2{
+    margin: 2% auto;
+}
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infos div{
+    border-top: #000000 1px solid;
+    border-bottom:#000000 1px solid ;
+}
+
+.single-recipe p{
+    margin: 50px auto;
+}
+
+.instructions ul{
+    list-style: none;
+}
+
+.instructions li{
+    margin: 2% 1%;
+}
+
+.instructions p{
+    margin: 8% 1%;
+}
+
+.title{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.step{
+    margin: 5% auto;
+    font-weight: 600;
+    color: chocolate;
+}
+/*FIN PAGE RECETTE*/
 
 /*FOOTER*/
 footer{
@@ -141,3 +196,4 @@ footer{
     background-color: black;
     color: white;
 }
+/*FIN FOOTER*/
